@@ -5,7 +5,7 @@ int main()
 int num, orig, rem, sum = 0;
 int len=0,org;
 //rem is remainder and original is the original number
-printf("Enter Any Number: ");
+printf("Enter Any Number Now: ");
 scanf("%d", &num);
 orig = num;
 org=num;
