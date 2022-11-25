@@ -2,7 +2,6 @@
 
 int main(){
 int amt;
-do{
 printf("Enter Your Amount Here\t");
 scanf("%d",&amt);
 printf("The Amount You Needed Is %d\n",amt);
@@ -21,7 +20,5 @@ amt%=10;
 printf("The No. Of Rs 5 Notes  Is  %d\n",amt/5);
 amt%=5;
 printf("The No. Of Rs 1 Coins  Is  %d\n",amt/1);
-}while(1==1);
-
-    return 0;
+return 0;
 }

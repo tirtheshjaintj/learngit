@@ -16,7 +16,7 @@ else{
 }
 }
 while(i>0){
-rem=i%10;
+rem=i%10;//65
 rem1+=rem;
 sum=(sum*10)+rem;
 i/=10;

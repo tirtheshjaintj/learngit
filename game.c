@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-
+#include <conio.h>
 int main(){
-do{
     srand(time(NULL));
     // printf("Random Number %d\n",rand()%30);
     int i=0;
@@ -12,10 +11,11 @@ do{
     int comp2;
     int sc1=0;
     int sc2=0;
+    int  ch;
 // printf("%s\n",person);
     printf("\t#####\t Please Enter \t 1 for Rock \t 2 for Paper \t 3 for Scissor\t #####\t\n");
-    while(i<3){
-   
+again:
+for(i=0;i<3;i++){
     printf("\aEnter Here <=>\t");
     scanf("%d",&comp2);
     int j=rand()%12;
@@ -66,21 +66,29 @@ else if((comp2==1 && comp1==3)||(comp2==3 && comp1==2)||(comp2==2 && comp1==1) )
     }
     else{
     }
-        i++;
     }
 printf("Final Sore Is You %d And Computer %d\t\t\n",sc2,sc1);
 if(sc1<sc2){
     printf("\t\t######\t\t Hey You Winner!,Congratulations You Won\t\t#####");
 }
 else if(sc1>sc2){
-    printf("\t\t######\t\t Hey You Loser!, Computer Won\t\t#####");
+    printf("\t\t######\t\t Hey You Loser!, Computer Won This Time\t\t#####");
 }
 else{
-    printf("\t\t######\t\t Hey You!, Its A Draw This Time \t\t#####");
+    printf("\t\t######\t\t Hey You!, Its A Draw This Time \t\t#####\n");
 }
-printf("\n\n");
+printf("\nPress 1 to Play Again ");
+scanf("%d",&ch);
+if(ch==1){
+    system("cls");
+    printf("\t#####\t Please Enter \t 1 for Rock \t 2 for Paper \t 3 for Scissor\t #####\t\n");
+    printf("\t\t######\t\t Next Game Starts Now \t\t#####\n");
+	goto again;
+}
+else{
 
-}while(1==1);
+}
+
 return 0;
     //   printf("%d",comp1==per1);
 }

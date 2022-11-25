@@ -1,25 +1,22 @@
 #include <stdio.h>
 
 int main(){
-int n1,n2,n3,n4;
-printf("Enter 4 Numbers");
-scanf("%d %d %d %d",&n1,&n2,&n3,&n4);
-if(n1<n2 && n1<n3 && n1<n4){
-    printf("%d Is The Smallest Term.",n1);
-}
-else if(n2<n1 && n2<n3 && n2<n4){
-    printf("%d Is The Smallest Term.",n2);
-}
-else if(n3<n1 && n3<n2 && n3<n4){
-    printf("%d Is The Smallest Term.",n3);
-}
-else if(n4<n1 && n4<n2 && n4<n3){
-    printf("%d Is The Smallest Term.",n4);
-}
-else{
-    printf("All Are Equal.");
+//Design a simple Calculator to perform all Arithmetic Operations.
+int a,b,ch;
+int num[5]={1,2,3,4,5,6};
+printf("Enter 1st Number= ");
+scanf("%d",&a);
+printf("Enter 2nd Number= ");
+scanf("%d",&b);
+printf("Enter 1 for Add , 2 for Subtract , 3 for Product , 4 for Division and 5 for Modulus");
+scanf("%d",&ch);
+
+switch (ch){
+case 1:
+	printf("%d",a+b);
+case 2:
+	printf("%d",a+b);
+
 }
 
-
-return 0;
 }
