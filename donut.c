@@ -5,8 +5,6 @@ double sin() ,cos();
 int main(){
     float A=0, B=0, i, j, z[1760];
     char b[1760];
-    system("color A");
-    printf("\x1b[2J");
     for(; ; ) {
         memset(b,32,1760);
         memset(z,0,7040);
@@ -39,5 +37,4 @@ int main(){
         A+=0.04;
         B+= 0.02;
     }
-    printf("Hello");
 }
